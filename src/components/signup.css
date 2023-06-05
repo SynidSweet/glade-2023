@@ -1,0 +1,187 @@
+
+
+#signup-wrapper {
+    position: fixed;
+    display: none;
+    top: 5vw;
+    left: 5vw;
+    right: 5vw;
+    bottom: 5vw;
+    z-index: 998; /* or another high number to ensure it's on top of other content */
+
+    
+}
+
+#signup-container {
+    overflow: auto; /* enable scroll if content is larger than the viewport */
+  
+    background-color: hsl(60, 5%, 16%);
+    border-radius: 4px;
+
+    max-width: 700px;
+
+    height:calc(100% - 4vw);
+
+    background-size:cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vw;
+    z-index: 998;
+
+    margin: auto;
+
+  }
+  
+  #signup-container::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  #signup-container::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  #signup-container::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+
+  #signup-nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    max-width: max-content;
+    margin: 40px auto;    
+}
+
+
+.signup-nav-item {
+
+    padding: .375em 1.125em;
+
+    font-size: 1.5rem;
+
+    color: rgb(43, 43, 43);
+  
+    font-family: "im-fell-caps";
+    border: 2px solid rgba(0, 0, 0, 0);
+    padding: 10px;
+    text-align: center;
+
+    cursor: pointer;
+
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 1000px) {
+    .signup-nav-item {
+        font-size: 1rem;
+    }
+  }
+
+.signup-nav-item:hover {
+    background-color: rgba(53, 53, 53, 0.781);
+    color: rgb(255, 255, 255);
+}
+
+.signup-nav-item.active {
+    background-color: rgba(53, 53, 53, 0.781);
+    color: rgb(255, 255, 255);
+}
+
+#signup-nav-4.active, #signup-nav-4:hover {
+    color: rgb(119, 255, 92);
+}
+
+
+#signup-content {
+    margin: 0 5%;
+    width: 90%;
+
+    font-family: "im-fell";
+    font-size: 1rem;
+    color: black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#signup-content h1 {
+    font-family: "im-fell-caps";
+}
+
+#signup-what {
+    /* max-width: 700px;
+    border-radius: 20px; */
+}
+
+#what-cover {
+    width: 100%;
+}
+
+#signup-how {
+    display:flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.how-box {
+    width: 280px;
+    background-color: rgba(192, 182, 124, 0.13);
+    padding: 25px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+
+}
+
+#signup-tickets {
+    text-align: center;
+}
+
+#signup-tickets h1 {
+    font-family: "im-fell-caps";
+    font-size: 2rem;
+}
+
+#signup-tickets h2 {
+    font-family: "im-fell";
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1000px) {
+    #signup-tickets h1 {
+        font-size: 1.6rem;
+    }
+    
+    #signup-tickets h2 {
+        font-size: 1.1rem;
+    }
+  }
+
+.ticket-wrapper {
+    border: 4px solid rgba(0, 0, 0, 0.521);
+    border-radius: 20px;
+    padding-bottom: 10px;
+}
+
+.how-box:hover {
+    background-color: rgba(192, 182, 124, 0.5);
+}
+
+.box-single
+{
+    flex-grow: 1;
+}
+
+.box-double {
+    flex-grow: 2;
+}
+
+#signup-signup {
+    /* max-width: 700px; */
+}
