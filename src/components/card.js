@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import { PresentationControls, useGLTF } from '@react-three/drei'
 import { Clock, MeshStandardMaterial, TextureLoader, RepeatWrapping, SRGBColorSpace, Color } from 'three'
 import { useFrame } from '@react-three/fiber';
-import { useSpring, config } from '@react-spring/three';
+import { useSpring } from '@react-spring/three';
 import BurnMaterial from '../materials/BurnMaterial2';
 import { on, trigger } from "../utils/events";
 

@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import './signupform.scss';
 import { useForm } from 'react-hook-form';
+import emailjs from 'emailjs-com';
 
 var myHeaders = new Headers();
 myHeaders.append("Content-Type", "application/json");
+
 
 const SignupForm = () => {
 
@@ -37,10 +39,18 @@ const SignupForm = () => {
                     data.contribute,
                     ]])
             }
-            ).then((response) => {
+            ).then((response) => {       
                 
                 setDone(true);
                 setButtonText("Thank you!");
+                document.querySelector('#submit-button').style.color = "#65f08a";
+
+                emailjs.send('the_glade_signup', 'template_dh511t9', data, 'UYJcIQoTKDxnxfNYW')
+                .then((result) => {
+                    console.log(result.text);
+                }, (error) => {
+                    console.log(error.text);
+                });
                 	                
             }).catch((error) => {
                 console.log(error);
@@ -101,7 +111,7 @@ const SignupForm = () => {
     </div>
 
     <div className="question-item">
-        <label htmlFor="life_description" className="label">Describe your life in three sentences</label>
+        <label htmlFor="life_description" className="label">Describe your life in one sentence.</label>
         <textarea name="life_description" className="textarea text-input"  maxLength="500" disabled={submitted} {...register("life_description")}></textarea>
     </div>
 
@@ -188,7 +198,7 @@ const SignupForm = () => {
 
 
     <div id="submit-button-wrapper">
-        <button
+        <button id="submit-button"
             type="submit"
             className="button-arounder"
         >

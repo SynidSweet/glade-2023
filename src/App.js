@@ -57,7 +57,7 @@ function App() {
       <div id="opener">
 
         <div className="opener-box">
-          <img id="video-preview" src="/video-preview.jpg"></img>
+          <img id="video-preview" src="./video-preview.jpg"></img>
           <button id="video-button" className="button-arounder" onClick={() => 
             {
               setOpen(true);
@@ -66,8 +66,8 @@ function App() {
         </div>
         <div className="opener-box">
           <div id="spinner-container">
-            <img id="headphones" src="/headphones.png"></img>
-            <img id="spinner" src="/spinner.gif"></img>
+            <img id="headphones" src="./headphones.png"></img>
+            <img id="spinner" src="./spinner.gif"></img>
           </div>
           <button id="start-button" className="button-arounder" onClick={() => 
             {
@@ -75,7 +75,7 @@ function App() {
 
               trigger('progression:begin'); 
               HideOpener();
-            }}>Listen / Read!
+            }}>Feel!
           </button>
         </div>
 
@@ -106,7 +106,7 @@ function App() {
       {
         ToggleSignup();
       }
-      }>{showSignup ? "Hide" : "Skip"}
+      }>{showSignup ? "Hide" : "Info & Signup"}
       </button>
 
       <Signup/>

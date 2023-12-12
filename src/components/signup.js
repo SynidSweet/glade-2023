@@ -45,23 +45,23 @@ const Signup = () => {
                         <div id="signup-how" style={{display: activeNav === "how" ? "flex" : "none"}}>
                             <div className="how-box box-single">
                                 <h2>When</h2>
-                                <p>Arrival is Thursday the 10th of August. It will end on Sunday after lunch, on the 13th. For a truly immersive experience we encourage all participants to stay for the entire event.</p>
+                                <p>Arrival is Thursday the 10th of August. It will end on Sunday after lunch, on the 13th. <br/><br/>For a truly immersive experience we encourage all participants to stay for the entire event.</p>
                             </div>
                             <div className="how-box box-single">
                                 <h2>Where</h2>
-                                <p>The event will take place outside in a forest somewhere in the Eksjö Municipality, in the south of Sweden. You are required to bring everything you need to camp comfortably outdoors and cook, during your stay. Food is not included but there is water for drinking and cooking. There is a lake nearby for swimming. It is possible to get there by both car and public transport.</p>
+                                <p>The event will take place outside in a forest somewhere in the Eksjö Municipality, in the south of Sweden. <br/><br/>You are required to bring everything you need to camp comfortably outdoors and cook, during your stay. Food is not included but there is water for drinking and cooking. <br/><br/>There is a lake nearby for swimming. It is possible to get there by both car and public transport.</p>
                             </div>
                             <div className="how-box box-single">
                                 <h2>Tickets</h2>
-                                <p>Early bird tickets will start at 1400 SEK. Regular tickets are 1600 SEK. After you've signed up, you will receive an email to purchase your ticket. The amount of tickets are limited to ~ 200 people.</p>
+                                <p>Early bird tickets will start at 1400 SEK. Regular tickets are 1600 SEK. After you've signed up, you will receive an email to purchase your ticket. <br/><br/>The amount of tickets are limited to ~ 200 people.</p>
                             </div>
                             <div className="how-box box-single">
                                 <h2>Principles</h2>
-                                <p>We apply the following burner principles: Radical self-reliance, Participation, Immediacy, and Leave a Better Trace. It is very important to note that this event is not suitable for children, pets or those who struggle with sensory overstimulation. We craft experiences that are not only beautiful or magical but sometimes also frightening and provocative, all in the name of art.</p>
+                                <p>We apply the following burner principles: Radical self-reliance, Participation, Immediacy, and Leave a Better Trace. <br/><br/>It is very important to note that this event is not suitable for children, pets or those who struggle with sensory overstimulation. <br/><br/>We craft experiences that are not only beautiful or magical but sometimes also frightening and provocative, all in the name of art.</p>
                             </div>
                             <div className="how-box box-double">
                                 <h2>Creators</h2>
-                                <p>We who organise this event are an international art collective called The Glade. We have members from the Nordics as well as other parts of the world. We are a ​​tribe of visionaries, artists, and technicians who are driven to create multidisciplinary art experiences that connect us to the wilderness. We welcome people from all walks of life and though we do not have any political or religious associations, we do feel a spiritual connection to the divinity of nature. If you wish to get in contact with us feel free to reach out at dwellers.of.the.glade@gmail.com</p>
+                                <p>We who organise this event are an international art collective called The Glade. We have members from the Nordics as well as other parts of the world. We are a ​​tribe of visionaries, artists, and technicians who are driven to create multidisciplinary art experiences that connect us to the wilderness. We welcome people from all walks of life and though we do not have any political or religious associations, we do feel a spiritual connection to the divinity of nature. <br/><br/>If you wish to get in contact with us feel free to reach out at dwellers.of.the.glade@gmail.com</p>
                             </div>
                         </div>
 

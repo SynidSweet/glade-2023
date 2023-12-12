@@ -3,9 +3,9 @@ import React, { Suspense } from 'react'
 import TreePlane from './tree';
 import CameraAnimation from './camera';
 import { Clock } from 'three';
-import { EffectComposer, Bloom } from "@react-three/postprocessing";
 import Lights from './lights';
 import AudioPlayer from './audioplayer';
+import { useThree } from '@react-three/fiber';
 
 const vars = {
     floatFactor: 1.0,
@@ -21,6 +21,9 @@ const stemPlayer = {
 const Scene = () => {
 
     const trees = [0, 1, 2, 3];
+    const { gl } = useThree();
+
+    gl.antialias = false;
 
   return (
     <group>
@@ -34,11 +37,11 @@ const Scene = () => {
         <CameraAnimation vars={vars}/>
         <AudioPlayer stemPlayer={stemPlayer}/>
 
-        <Suspense>
+        {/* <Suspense>
             <EffectComposer>
                 <Bloom luminanceThreshold={0.5} luminanceSmoothing={0.02} height={300}/>
             </EffectComposer>
-        </Suspense>
+        </Suspense> */}
     </group>
   )
 }
